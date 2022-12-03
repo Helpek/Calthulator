@@ -1,10 +1,19 @@
 <html>
 <head>
-	<script type="text/javascript">
-	</script>
-</head> 
-<body color:green>
-<h1> Calthulator </h1>
-	
-</body>
-</html>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+<title>Calthulator</title>
+</head> <body>
+<h1 style="margin-bottom: 15px; margin-top: 35px"> Calthulator </h1>
+<h2 style="margin: 0px"> For Vertulia </h2> <br>
+upgrade = const+((100-stat)/damp)<br>
+<p style="margin: 30px">
+Stat: <input type="number" value="" class="stats" id="stat"  onchange="calculate()"> <br>
+const: <input type="number" value="1" class="numbers" id="const" onchange="calculate()">
+damp:<input type="number" value="10" class="numbers" id="damp"onchange="calculate()">
+</p>
+<p id="results">
+results: <br>
+(stat+upgrade)
+</p>
+</body> </html>
