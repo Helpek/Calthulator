@@ -10,7 +10,7 @@ var cons = parseInt(consValue)
 var operations = 9;
 
 		if (stat < 100) {
-		document.getElementById("results").innerHTML = "Results: <br> (stat+upgrade) <br> <kolor class='green'>" + stat + " -> " + Math.floor((stat + cons + ((100-stat)/10)))
+		document.getElementById("results").innerHTML = "Results: <br> (stat+upgrade) <br> <kolor class='green'>" + stat + " -> " + Math.floor((stat + cons + ((100-stat)/damp)))
 		stat = Math.floor((stat + cons + ((100-stat)/10)))
 		
 		} else	{
@@ -22,7 +22,7 @@ var operations = 9;
 
 	for (var i = 0; i < operations; i++) {
 		if (stat < 100) {
-		document.getElementById("results").innerHTML = document.getElementById("results").innerHTML + "<br> <kolor class='blue'>" + stat + " -> "+ Math.floor((stat + cons + ((100-stat)/10)))
+		document.getElementById("results").innerHTML = document.getElementById("results").innerHTML + "<br> <kolor class='blue'>" + stat + " -> "+ Math.floor((stat + cons + ((100-stat)/damp)))
 		stat = Math.floor((stat + cons + ((100-stat)/10)))
 		
 		} else	{
